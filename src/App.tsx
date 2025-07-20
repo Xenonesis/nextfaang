@@ -23,6 +23,7 @@ import LanguageTranslation from "./pages/LanguageTranslation";
 import ContestAnalyzer from "./pages/ContestAnalyzer";
 import CPArena from "./pages/CPArena";
 import CompetitiveProgramming from "./pages/CompetitiveProgramming";
+import Community from "./pages/Community";
 import { ProfilePage } from "./components/ProfilePage";
 
 
@@ -126,6 +127,11 @@ const App = () => {
             <Route path="/profile" element={
               <ErrorBoundary>
                 <ProfilePage />
+              </ErrorBoundary>
+            } />
+            <Route path="/community" element={
+              <ErrorBoundary>
+                <Community />
               </ErrorBoundary>
             } />
 
